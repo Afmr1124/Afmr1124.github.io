@@ -2,8 +2,8 @@
 import { pic } from "../anya";
 
 const links = [
-    { text: "Anya", url: "/" },
-    { text: "About", url: "/about" },
+    { text: "Home", url: "/" },
+    { text: "About Me", url: "/about" },
     { text: "Projects", url: "/projects" },
 ];
 </script>
@@ -17,11 +17,11 @@ const links = [
                 'w-full',
                 'rounded-b-lg',
                 'bg-gradient-to-r',
-                'from-violet-800',
-                'to-indigo-600',
+                'from-blue-500',
+                'to-sky-500',
                 'pl-24',
                 'shadow-lg',
-                'shadow-indigo-400',
+                'shadow-lime-400',
                 'md:pl-32',
                 'transition-all',
                 'duration-200',
@@ -35,7 +35,7 @@ const links = [
             >
                 <router-link
                     :to="link.url"
-                    class="text-xl text-white opacity-80 shadow-cyan-300 drop-shadow-xl transition-all duration-200 hover:text-2xl hover:opacity-100"
+                    class="text-xl text-white opacity-80 shadow-red-300 drop-shadow-xl transition-all duration-200 hover:text-2xl hover:opacity-100"
                     >{{ link.text }}</router-link
                 >
             </div>
@@ -50,12 +50,12 @@ const links = [
             leave-to-class="transform -translate-x-32"
         >
             <div
-                class="absolute top-4 left-4 z-50 h-20 w-20 overflow-hidden rounded-full bg-pink-200 shadow-md shadow-blue-300 ring-1 ring-violet-700 md:h-24 md:w-24"
+                class="absolute top-4 left-4 z-50 h-20 w-20 overflow-hidden rounded-full bg-lime-600 shadow-md shadow-yellow-300 ring-1 ring-red-200 md:h-24 md:w-24"
                 v-if="$route.path !== '/about'"
             >
                 <img
                     :src="pic.uniform"
-                    class="w-full translate-y-12 scale-[180%] transition-all duration-200 hover:rounded-xl hover:pt-5 md:translate-y-14 md:hover:pt-7"
+                    class="w-full scale-[180%] transition-all duration-200 hover:rounded-xl hover:pt-5 md:translate-y-14 md:hover:pt-7"
                 />
             </div>
         </transition>

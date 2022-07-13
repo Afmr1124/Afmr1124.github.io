@@ -30,14 +30,14 @@ let step = ref(0);
                 @done="step++"
             ></Typing>
             <Typing
-                class="mb-2 block text-sm text-gray-600 md:text-base"
+                class="mb-2 block text-sm text-slate-800 md:text-base"
                 :text="project.description"
                 :speed="40"
                 v-if="step > 0"
                 @done="step++"
             ></Typing>
             <Typing
-                class="block text-sm text-gray-400 md:text-base"
+                class="block text-sm text-lime-900 md:text-base"
                 :text="project.skills.join(', ')"
                 :speed="40"
                 v-if="step > 1"
@@ -52,7 +52,7 @@ let step = ref(0);
                     class="inline-block"
                 >
                     <Typing
-                        class="w-full text-blue-400 transition-all duration-200 ease-in hover:text-blue-600"
+                        class="w-full text-indigo-900 transition-all duration-200 ease-in hover:text-red-600"
                         :text="project.url"
                         :speed="40"
                         v-if="step > 2"

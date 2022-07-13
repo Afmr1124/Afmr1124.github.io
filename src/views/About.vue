@@ -45,7 +45,7 @@ function update(delay = 0) {
                 v-if="step > 0"
                 @done="step++"
                 class="flex-1 md:mx-4"
-                @click="open('https://spy-family.net/')"
+                @click="open('https://www.instagram.com/hsienyun_lin._1124/?hl=zh-tw')"
             />
         </div>
         <Typing
@@ -59,7 +59,7 @@ function update(delay = 0) {
             <div
                 v-for="i in pic.avatars.length - 1"
                 :key="i"
-                class="m-2 overflow-hidden rounded-full ring-fuchsia-400 transition-all hover:ring-4"
+                class=" w-fit h-fit overflow-hidden rounded-full ring-yellow-500 transition-all hover:ring-4"
             >
                 <transition
                     enter-active-class="duration-200 ease-out"
@@ -74,7 +74,7 @@ function update(delay = 0) {
                         v-show="step > 1 + i"
                         :src="pic.avatars[i]"
                         class="w-full cursor-pointer transition-all hover:scale-125"
-                        @click="open('https://spy-family.net/#tSpecial')"
+                        @click="open('https://www.instagram.com/hsienyun_lin._1124/?hl=zh-tw')"
                     />
                 </transition>
             </div>

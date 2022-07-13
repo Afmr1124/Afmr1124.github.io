@@ -13,15 +13,15 @@ const width = screen.width;
         <div class="flex w-full flex-col md:flex-row">
             <div class="w-full md:w-1/2">
                 <Typing
-                    text="Anya Forger"
+                    text="YunHsien_Lin"
                     @done="step++"
                     class="mb-2 block text-2xl sm:text-3xl lg:text-4xl"
                 />
                 <Typing v-if="step > 0" @done="step++" :text="titles.join(', ')" :speed="60" />
                 <a
                     v-if="step > 1"
-                    class="mt-8 flex items-center text-lg text-gray-500 transition-all hover:text-gray-700"
-                    href="https://github.com/anya-forger"
+                    class="mt-8 flex items-center text-lg text-lime-500 transition-all hover:text-red-400"
+                    href="https://github.com/Afmr1124"
                     target="_blank"
                 >
                     <MdiGithub class="mr-1 inline-block" />
@@ -29,8 +29,8 @@ const width = screen.width;
                 </a>
                 <a
                     v-if="step > 2"
-                    class="mt-4 flex items-center text-lg text-gray-500 transition-all hover:text-gray-700"
-                    href="https://www.instagram.com/spy_family_official/"
+                    class="mt-4 flex items-center text-lg text-lime-500 transition-all hover:text-red-400"
+                    href="https://www.instagram.com/hsienyun_lin._1124/?hl=zh-tw"
                     target="_blank"
                 >
                     <MdiInstagram class="mr-1 inline-block" />
@@ -49,7 +49,7 @@ const width = screen.width;
                     <img
                         v-show="step > (width >= 768 ? 0 : 3)"
                         :src="pic.casual_large"
-                        class="-translate-y-0 scale-[200%] md:-translate-y-20 md:scale-150 lg:-translate-y-32 lg:scale-125"
+                        class="-translate-y-0 md:-translate-y-20 md:scale-150 lg:-translate-y-32 lg:scale-125"
                     />
                 </transition>
             </div>
