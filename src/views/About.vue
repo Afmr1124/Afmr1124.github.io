@@ -59,7 +59,7 @@ function update(delay = 0) {
             <div
                 v-for="i in pic.avatars.length - 1"
                 :key="i"
-                class=" w-fit h-fit overflow-hidden rounded-full ring-yellow-500 transition-all hover:ring-4"
+                class=" w-fit h-fit my-2 mx-2 overflow-hidden rounded-full ring-yellow-500 transition-all hover:ring-4"
             >
                 <transition
                     enter-active-class="duration-200 ease-out"

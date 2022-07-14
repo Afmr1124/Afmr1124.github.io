@@ -7,26 +7,26 @@ const pic = {
 };
 
 pic.avatars.push(
-    "https://i.pinimg.com/564x/3a/eb/53/3aeb534ef2f94ecf0aa03681f9e6013e.jpg",
+    "https://i.pinimg.com/564x/fd/41/21/fd41217d167bc7e482c2873afe90d7af.jpg",
     "https://i.pinimg.com/564x/6e/3c/15/6e3c153f56ae317a7dd8d411a645d781.jpg",
-    "https://i.pinimg.com/564x/b3/af/d1/b3afd119d692ec2e834004d0b40fcf30.jpg",
     "https://i.pinimg.com/564x/8e/e3/6d/8ee36d0c5218b69f6d69fc877c6ed427.jpg",
     "https://i.pinimg.com/564x/94/36/5d/94365da8469f67e5fadae4b0c092b2f7.jpg",
     "https://i.pinimg.com/564x/b0/9a/80/b09a80ace593f085cc3df46fae422ad9.jpg",
-    "https://i.pinimg.com/564x/85/55/c4/8555c4d3d9662702d2bc9d57e80af175.jpg",
-    "https://i.pinimg.com/564x/e2/43/9c/e2439cf5f36e7db9d5ca651f5572f178.jpg",
-    "https://i.pinimg.com/564x/06/8d/28/068d28bc3a69754209df3468476be33f.jpg",
-    "https://i.pinimg.com/564x/8c/14/24/8c14243d2e00bfcce8791fc94fbfebc4.jpg",
-    "https://i.pinimg.com/564x/0d/4d/d5/0d4dd5bb993caa3ab4379e554c4c685e.jpg",
-    "https://i.pinimg.com/564x/eb/97/29/eb972908559a8e12fcde062e1ae32da4.jpg",
-    "https://i.pinimg.com/564x/fd/41/21/fd41217d167bc7e482c2873afe90d7af.jpg",
     "https://i.pinimg.com/736x/e2/ee/b0/e2eeb023999ac0eb3bc67443f920d329.jpg",
     "https://i.pinimg.com/564x/4f/70/7d/4f707d0e7ce7aaa0a5ce38bba6583771.jpg",
     "https://i.pinimg.com/564x/eb/03/af/eb03afd2c1c9ada7737c2ed7ff96bf64.jpg",
-    "https://i.pinimg.com/564x/ea/05/cd/ea05cd84458f032b8da05ede7d258529.jpg",
     "https://i.pinimg.com/564x/12/5b/de/125bdee9ca2e92bb1c8dd73a9c731bda.jpg",
-    "https://i.pinimg.com/564x/d3/58/5d/d3585d47152be01145068fbb38679b2f.jpg",
+    "https://i.pinimg.com/564x/8c/14/24/8c14243d2e00bfcce8791fc94fbfebc4.jpg",
+    "https://i.pinimg.com/564x/0d/4d/d5/0d4dd5bb993caa3ab4379e554c4c685e.jpg",
+    "https://i.pinimg.com/564x/eb/97/29/eb972908559a8e12fcde062e1ae32da4.jpg",
+    "https://i.pinimg.com/564x/b3/af/d1/b3afd119d692ec2e834004d0b40fcf30.jpg",
+    "https://i.pinimg.com/564x/85/55/c4/8555c4d3d9662702d2bc9d57e80af175.jpg",
+    "https://i.pinimg.com/564x/e2/43/9c/e2439cf5f36e7db9d5ca651f5572f178.jpg",
+    "https://i.pinimg.com/564x/ea/05/cd/ea05cd84458f032b8da05ede7d258529.jpg",
     "https://i.pinimg.com/564x/fb/93/04/fb93044d2e1be4ac3cfbb71e3f636622.jpg",
+    "https://i.pinimg.com/564x/d3/58/5d/d3585d47152be01145068fbb38679b2f.jpg",
+    "https://i.pinimg.com/564x/06/8d/28/068d28bc3a69754209df3468476be33f.jpg",
+
 );
 
 const titles = ["來自彰化", "曾就讀：陝西國小、精誠國中", "目前就讀：秀水高工室設科113級"];
@@ -69,18 +69,19 @@ const projects = [
         url: "https://afmr1124.github.io/",
     },
     {
-        name: "作文比賽",
-        description: "A gomoku gaming agent with Python that I designed in NTNU CSIE Camp.",
-        image: "https://spy-family.net/assets/img/special/wall01.jpg",
-        skills: ["Python", "Algorithm", "Gomoku"],
-        url: "https://github.com/anya-forger",
+        name: "高一作文比賽",
+        description: "寫文章一向都是我拿手的，但上了高中後，也很少在寫作文了…其實原本的我很討厭寫字，直到遇到了一些困境，我才開始慢慢培養寫作的能力。而這次的作文題目是：「如何與異性相處」(？)",
+        image: "",
+        skills: ["Writing", "Feelings", "Expression"],
+        url: "",
     },
     {
-        name: "SPY x FAMILY",
-        description: "An anime that I starred in.",
-        image: "https://spy-family.net/assets/img/special/special10_1.gif",
-        skills: ["Performings"],
-        url: "https://spy-family.net",
+        name: "人生「會考」兩次",
+        description: "第一次是正常升高中，第二次是休學後，毅然決然選擇轉學，差點考不了...",
+        image: "",
+        skills: ["身體健康，什麼都好了"],
+        url: "",
+        /*可以架一個網站，給自己放自己的暗嘿，想放的東西。可以用監聽系統，監視每個瀏覽者的資料*/
     },
 ];
 

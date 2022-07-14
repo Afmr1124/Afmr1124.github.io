@@ -20,7 +20,7 @@ function random_text(length = 32) {
                 v-for="(project, index) in projects"
                 :key="index"
                 :project="project"
-                class="my-2 w-full rounded-md bg-amber-600 bg-opacity-50 p-4 shadow-md shadow-indigo-200"
+                class="my-2 w-full rounded-md bg-amber-600 bg-opacity-50 p-4 shadow-md shadow-white"
             />
         </div>
         <div class="opacity-0">

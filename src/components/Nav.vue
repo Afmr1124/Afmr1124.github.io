@@ -18,10 +18,10 @@ const links = [
                 'rounded-b-lg',
                 'bg-gradient-to-r',
                 'from-blue-500',
-                'to-sky-500',
+                'to-sky-400',
                 'pl-24',
                 'shadow-lg',
-                'shadow-lime-400',
+                'shadow-lime-300',
                 'md:pl-32',
                 'transition-all',
                 'duration-200',
@@ -31,8 +31,8 @@ const links = [
             <div
                 v-for="(link, index) in links"
                 :key="index"
-                class="mx-2 flex h-16 items-center justify-center sm:w-24"
-            >
+                class="mx-2 flex h-16 items-center justify-center bg-cyan-500 sm:w-24"
+            >  
                 <router-link
                     :to="link.url"
                     class="text-xl text-white opacity-80 shadow-red-300 drop-shadow-xl transition-all duration-200 hover:text-2xl hover:opacity-100"
@@ -50,12 +50,12 @@ const links = [
             leave-to-class="transform -translate-x-32"
         >
             <div
-                class="absolute top-4 left-4 z-50 h-20 w-20 overflow-hidden rounded-full bg-lime-600 shadow-md shadow-yellow-300 ring-1 ring-red-200 md:h-24 md:w-24"
+                class="absolute top-4 left-4 z-50 h-20 w-20 overflow-hidden rounded-full bg-lime-600 shadow-yellow-300 ring-1 ring-red-200 md:h-24 md:w-24"
                 v-if="$route.path !== '/about'"
             >
                 <img
                     :src="pic.uniform"
-                    class="w-full scale-[180%] transition-all duration-200 hover:rounded-xl hover:pt-5 md:translate-y-14 md:hover:pt-7"
+                    class="w-fit h-fit scale-150 translate-x-fit translate-y-fit"
                 />
             </div>
         </transition>
