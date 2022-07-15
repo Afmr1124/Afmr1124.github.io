@@ -20,7 +20,7 @@ function update(delay = 0) {
         <Typing
             text="About Me"
             @done="step++"
-            class="mb-8 block text-2xl sm:text-3xl lg:text-4xl"
+            class="mb-8 block text-4xl text-green-600 sm:text-3xl lg:text-4xl"
         />
 
         <div class="flex w-full flex-col justify-end md:flex-row-reverse">
@@ -34,11 +34,12 @@ function update(delay = 0) {
             >
                 <img
                     :src="pic.icecream"
-                    class="inline-block w-64 p-4 drop-shadow-lg md:w-96"
+                    class="inline-block w-64 p-4 bg-slate-400 drop-shadow-lg md:w-96"
                     @load="show_pic = true"
                     v-show="step > 0 && show_pic"
                 />
             </transition>
+            <br/>
             <Typing
                 :text="about"
                 :speed="25"
@@ -52,8 +53,8 @@ function update(delay = 0) {
             text="My Pictures"
             :speed="50"
             v-if="step > 1"
-            @done="step++"
-            class="mt-4 block text-lg"
+            @done="step++" 
+            class="text-2xl mt-4 block text-amber-800 "
         />
         <div class="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8">
             <div
@@ -79,9 +80,13 @@ function update(delay = 0) {
                 </transition>
             </div>
         </div>
-        <div class="opacity-0">
-            I'm so cute!<br />
-            Waku Waku!
+        <div class="text-amber-500 ">
+            來投票~<br />
+            覺得我美的就分享給你的男性友人<br />
+            覺得我帥的就分享給你的女性友人<br/>
+            如果都沒有<br/>
+            Email:11015121@st.ssivs.chc.edu.tw<br/>
+            我會告訴你我的ㄒㄧㄎㄨ一ㄊㄜˋ
         </div>
     </div>
 </template>

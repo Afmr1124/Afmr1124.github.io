@@ -31,11 +31,11 @@ const links = [
             <div
                 v-for="(link, index) in links"
                 :key="index"
-                class="mx-2 flex h-16 items-center justify-center bg-cyan-500 sm:w-24"
+                class="mx-2 flex h-16 items-center justify-center sm:w-24"
             >  
                 <router-link
                     :to="link.url"
-                    class="text-xl text-white opacity-80 shadow-red-300 drop-shadow-xl transition-all duration-200 hover:text-2xl hover:opacity-100"
+                    class="text-xl text-red-900 opacity-80 transition-all duration-200 hover:text-2xl hover:text-white hover:opacity-100"
                     >{{ link.text }}</router-link
                 >
             </div>
@@ -50,12 +50,12 @@ const links = [
             leave-to-class="transform -translate-x-32"
         >
             <div
-                class="absolute top-4 left-4 z-50 h-20 w-20 overflow-hidden rounded-full bg-lime-600 shadow-yellow-300 ring-1 ring-red-200 md:h-24 md:w-24"
+                class="absolute top-4 left-4 z-50 h-20 w-20 overflow-hidden rounded-full bg-sky-600 bg-opacity-80 shadow-yellow-700 shadow-xl ring-4 ring-red-200 md:h-24 md:w-24"
                 v-if="$route.path !== '/about'"
             >
                 <img
                     :src="pic.uniform"
-                    class="w-fit h-fit scale-150 translate-x-fit translate-y-fit"
+                    class=" scale-150 translate-x-fit translate-y-fit"
                 />
             </div>
         </transition>

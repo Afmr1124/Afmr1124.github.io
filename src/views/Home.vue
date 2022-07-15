@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from "vue";
+import { reactive, ref } from "vue";
 import MdiGithub from "~icons/mdi/github";
 import MdiInstagram from "~icons/mdi/instagram";
 import { pic, titles } from "../anya";
@@ -15,12 +15,12 @@ const width = screen.width;
                 <Typing
                     text="YunHsien_Lin"
                     @done="step++"
-                    class="mb-2 block text-2xl sm:text-3xl lg:text-4xl"
+                    class="mb-2 block text-3xl text-red-800 sm:text-3xl lg:text-4xl"
                 />
                 <Typing v-if="step > 0" @done="step++" :text="titles.join(', ')" :speed="60" />
                 <a
                     v-if="step > 1"
-                    class="mt-8 flex items-center text-lg text-lime-500 transition-all hover:text-red-400"
+                    class="mt-8 flex items-center text-lg text-lime-500 transition-all hover:text-red-400 hover:text-xl"
                     href="https://github.com/Afmr1124"
                     target="_blank"
                 >
@@ -29,7 +29,7 @@ const width = screen.width;
                 </a>
                 <a
                     v-if="step > 2"
-                    class="mt-4 flex items-center text-lg text-lime-500 transition-all hover:text-red-400"
+                    class="mt-4 flex items-center text-lg text-lime-500 transition-all hover:text-red-400 hover:text-xl"
                     href="https://www.instagram.com/hsienyun_lin._1124/?hl=zh-tw"
                     target="_blank"
                 >
@@ -49,14 +49,15 @@ const width = screen.width;
                     <img
                         v-show="step > (width >= 768 ? 0 : 3)"
                         :src="pic.casual_large"
-                        class="-translate-y-0 md:-translate-y-20 md:scale-150 lg:-translate-y-32 lg:scale-125"
+                        class=" md:-translate-y-fit md:-translate-x-fit md:scale-150 lg:-translate-y-fit lg:-translate-x-fit lg:scale-150duration-200 "
                     />
                 </transition>
             </div>
         </div>
-        <div class="opacity-0">
-            I'm so cute!<br />
-            Waku Waku!
+        <div class="text-amber-500">
+            此網站架構來自<br/>
+            https://github.com/anya-forger/anya-forger.github.io<br />
+            還請請多多指教
         </div>
     </div>
 </template>
