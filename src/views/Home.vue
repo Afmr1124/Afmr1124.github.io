@@ -55,7 +55,7 @@ const width = screen.width;
             </div>
         </div>
         <div class="text-amber-500">
-            595此網站架構來自<br/>
+            此網站架構來自<br/>
             https://github.com/anya-forger/anya-forger.github.io<br />
             還請請多多指教
         </div>

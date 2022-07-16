@@ -85,7 +85,7 @@ function update(delay = 0) {
             覺得我美的就分享給你的男性友人<br />
             覺得我帥的就分享給你的女性友人<br/>
             如果都沒有<br/>
-            Email:11015121@st.ssivs.chc.edu.tw<br/>
+            Email:yunhsien931124@gmail.com<br/>
             我會告訴你我的ㄒㄧㄎㄨ一ㄊㄜˋ
         </div>
     </div>
