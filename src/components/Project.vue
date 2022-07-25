@@ -31,7 +31,7 @@ let step = ref(0);
             ></Typing>
             <Typing
                 class="mb-2 block text-sm text-slate-800 md:text-base"
-                :text="project.description"
+                :text="project.description.join('/n')"
                 :speed="40"
                 v-if="step > 0"
                 @done="step++"

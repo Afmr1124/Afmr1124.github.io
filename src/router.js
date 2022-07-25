@@ -7,6 +7,7 @@ const routes = [
     { path: "/about", name: "about", component: () => import("./views/About.vue") },
     { path: "/projects", name: "projects", component: () => import("./views/Projects.vue") },
     { path: "/:catchAll(.*)*", redirect: "/" },
+    { path: "/new", name: "New", component: () => import("./views/New.vue") },
 ];
 
 export const router = createRouter({

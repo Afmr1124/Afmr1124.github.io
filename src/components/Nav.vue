@@ -5,6 +5,7 @@ const links = [
     { text: "Home", url: "/" },
     { text: "About Me 關於我", url: "/about" },
     { text: "我的歷程", url: "/projects" },
+    { text: "Mycraft", url: "/new"},
 ];
 </script>
 

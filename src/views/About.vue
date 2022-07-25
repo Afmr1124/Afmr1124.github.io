@@ -54,7 +54,7 @@ function update(delay = 0) {
             :speed="50"
             v-if="step > 1"
             @done="step++" 
-            class="text-2xl mt-4 block text-amber-800 "
+            class="text-3xl mt-4 block text-amber-800 "
         />
         <div class="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8">
             <div
