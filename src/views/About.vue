@@ -18,9 +18,9 @@ function update(delay = 0) {
 <template>
     <div class="h-full w-full px-8 pt-8 sm:px-12 sm:pt-12 lg:px-16 lg:pt-16">
         <Typing
-            text="/About Me//關於我/"
+            text="/關於小美蛋糕/"
             @done="step++"
-            class="mb-8 block text-4xl text-green-600 sm:text-3xl lg:text-4xl"
+            class="mb-8 block text-4xl text-amber-900 sm:text-3xl lg:text-4xl"
         />
 
         <div class="flex w-full flex-col justify-end md:flex-row-reverse">
